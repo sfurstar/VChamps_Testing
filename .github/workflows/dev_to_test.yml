@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Mege DEV into TESt
         run:
-          git fetch dev
+          git fetch origin/dev
           git checkout test
           git merge dev
           git push test
