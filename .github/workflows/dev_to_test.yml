@@ -29,6 +29,6 @@ jobs:
       - name: Mege DEV into TESt
         run:
           git fetch origin/dev
-          git checkout test
-          git merge dev
-          git push test
+          git checkout origin/test
+          git merge origin/dev
+          git push origin/test
